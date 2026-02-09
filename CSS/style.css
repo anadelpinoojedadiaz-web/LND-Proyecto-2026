@@ -56,9 +56,9 @@ header h1:hover {
 
 /* Logo pequeño junto al texto */
 .logo-icon {
-    width: 50px;
-    height: 50px;
-    background-image: url(''); /* Usamos la misma imagen del favicon */
+    width: 100px;
+    height: 100px;
+    background-image: url('../Images/Favicon.png'); /* Usamos la misma imagen del favicon */
     background-size: contain;
     background-repeat: no-repeat;
 }
