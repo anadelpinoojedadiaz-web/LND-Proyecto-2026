@@ -7,7 +7,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: #000;
         }
         #bg-video {
             position: absolute;
@@ -19,7 +18,7 @@
         .video-overlay { 
             position: relative; 
             z-index: 1; 
-            color: white; 
+            color: rgb(34, 144, 254); 
             text-align: center; 
         }
 
