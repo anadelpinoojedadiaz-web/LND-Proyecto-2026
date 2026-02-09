@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - El Censo Literario</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Contacto.css">
+</head>
+<body>
+
+    <header>
+        <h1>El Censo Literario</h1>
+        <p>Pasión por los libros, compromiso con la lectura</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="Reseñas.html">Reseñas</a>
+        <a href="Generos.html">Géneros</a>
+        <a href="AZ.html">A-Z</a>
+        <a href="Contacto.html" class="active">Sobre Nosotros</a>
+    </nav>
+
+    <main class="container">
+        <section class="quienes-somos">
+            <div class="texto-introduccion">
+                <h2>¿Quién está detrás de El Censo Literario?</h2>
+                <p>Bienvenido a nuestro rincón digital. <strong>El Censo Literario</strong> nació en 2026 como un proyecto personal destinado a organizar el vasto universo de las letras. Somos un equipo de lectores empedernidos que cree que cada libro tiene su lector ideal.</p>
+                <p>Nuestra misión es catalogar, reseñar y conectar historias con personas, manteniendo viva la llama de la literatura en la era digital.</p>
+                <p>Creemos en la crítica honesta y en la comunidad como base del aprendizaje literario.</p>
+            </div>
+        </section>
+
+        <section class="formulario-seccion">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes alguna sugerencia o quieres que reseñemos un libro específico? Escríbenos y te responderemos lo antes posible.</p>
+            
+            <form action="#" method="POST" class="form-contacto">
+                <div class="grupo-form">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required>
+                </div>
+
+                <div class="grupo-form">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <div class="grupo-form">
+                    <label for="asunto">Asunto:</label>
+                    <select id="asunto" name="asunto">
+                        <option value="sugerencia">Sugerencia de libro</option>
+                        <option value="error">Reportar un error</option>
+                        <option value="colaboracion">Colaboración</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="grupo-form">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe aquí tu mensaje..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Volver a Inicio</a></p>
+        <div class="footer-links">
+            <a href="#">Aviso legal</a>
+            <a href="#">Política de privacidad</a>
+        </div>
+        <p>&copy; 2026 El Censo Literario - Proyecto Web | Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

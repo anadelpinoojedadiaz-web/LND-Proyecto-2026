@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseñas - El Censo Literario</title>
+    <link rel="stylesheet" href="reseñas.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>El Censo Literario</h1>
+        <h4>Explora nuestro archivo completo de críticas</h4>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="Reseñas.html">Reseñas</a>
+        <a href="Generos.html">Géneros</a>
+        <a href="AZ.html">A-Z</a>
+        <a href="Contacto.html">Sobre nosotros</a>
+    </nav>
+
+    <main class="main-resenas">
+        <section class="filtro-contenedor">
+            <div class="buscador-desplegable">
+                <select id="filtro-tiempo" name="tiempo">
+                    <option value="hoy">Hoy</option>
+                    <option value="semana">Hace una semana</option>
+                    <option value="mes">Hace un mes</option>
+                    <option value="ano">Hace un año</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="lista-resenas">
+            <article class="tarjeta-resena">
+                <div class="resena-img">
+                    <img src="../Images/el-gran-gatsby.jpg" alt="Portada de El Gran Gatsby"> </div>
+                <div class="resena-info">
+                    <h3>El Gran Gatsby - Scott Fitzgerald</h3>
+                    <p class="meta">Reseña by @usuario • <span>Publicado: Hoy</span></p>
+                    <p class="extracto">Una extraordinaria fábula sobre el sueño americano...</p>
+                    <div class="ratings">Ratings: ★★★★☆</div>
+                    <a href="resena-completa-1.html" class="boton-leer">Leer reseña completa</a>
+                </div>
+            </article>
+
+            <article class="tarjeta-resena">
+                <div class="resena-img"><img src="../Images/cumbres-borrascosas.jpg" alt="Portada libro"></div>
+                <div class="resena-info">
+                    <h3>Cumbres Borrascosas - Emily Brontë</h3>
+                    <p class="meta">Reseña by @lector_pro • <span>Hace una semana</span></p>
+                    <p class="extracto">Una historia de pasión y venganza en los páramos de Yorkshire...</p>
+                    <div class="ratings">Ratings: ★★★★★</div>
+                    <a href="#" class="boton-leer">Leer reseña completa</a>
+                </div>
+            </article>
+            
+            </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Volver a Inicio</a></p>
+        <div class="footer-links">
+            <a href="#">Aviso legal</a>
+            <a href="#">Política de privacidad</a>
+        </div>
+        <p>&copy; 2026 El Censo Literario - Proyecto Web | Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

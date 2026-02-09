@@ -1,0 +1,97 @@
+/* Estilos para la página de Reseñas */
+
+
+.main-resenas {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Buscador que se ajusta a lo ancho */
+.filtro-contenedor {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.buscador-desplegable select {
+    width: 100%; /* Ajuste a lo ancho */
+    padding: 15px;
+    font-size: 1.1rem;
+    border: 2px solid #2c3e50;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Esquema de tarjetas de reseñas */
+.tarjeta-resena {
+    display: flex; /* Flexbox para alinear imagen e info */
+    gap: 20px;
+    background: white;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-resena:hover {
+    transform: scale(1.02);
+}
+
+.resena-img img {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+.resena-info h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-family: 'Playfair Display', serif;
+}
+
+.meta {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.ratings {
+    color: #d35400;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.boton-leer {
+    display: inline-block;
+    background-color: #2c3e50;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    transition: background 0.3s;
+}
+
+.boton-leer:hover {
+    background-color: #d35400;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .main-resenas { padding: 15px; }
+}
+
+/* Móvil */
+@media (max-width: 480px) {
+    .tarjeta-resena {
+        flex-direction: column; /* Apilar imagen y texto en móviles */
+        text-align: center;
+    }
+    .resena-img img {
+        margin: 0 auto;
+    }
+}
