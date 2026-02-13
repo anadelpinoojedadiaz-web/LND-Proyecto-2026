@@ -3,6 +3,8 @@
     max-width: 900px; /* Un poco más estrecho para que sea más legible */
     margin: 40px auto;
     padding: 20px;
+    display: flex;
+    flex-direction: row;
 }
 
 /* Sección Introducción */
@@ -13,6 +15,8 @@
     margin-bottom: 40px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     text-align: center;
+    display: flex;
+    flex: 1;
 }
 
 .quienes-somos h2 {
@@ -35,6 +39,9 @@
     padding: 50px;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
 }
 
 .formulario-seccion h2 {
@@ -63,6 +70,25 @@
 .grupo-form label {
     font-weight: bold;
     font-size: 0.95rem;
+}
+
+/* Estilo para el nuevo grupo de checkbox */
+.grupo-form-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+}
+
+.grupo-form-check input {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.grupo-form-check label {
+    font-weight: normal;
+    cursor: pointer;
 }
 
 .grupo-form input, 
@@ -103,7 +129,29 @@
 /* Responsive */
 @media (max-width: 768px) {
     .formulario-seccion {
-        padding: 30px 20px;
+        padding: 30px 20px; /*Reduce el espacio para versión móviles*/
+    }
+    .quienes-somos {
+        padding: 20px; /*caja de texto*/
+
+    }
+    .container{
+          flex-direction: column;
+
+    }
+}
+
+@media (max-height: 600px) {
+    .container {
+        margin: 10px auto; /* Reduce el margen superior para que no haya que hacer tanto scroll */
+        
+    }
+    .quienes-somos, .formulario-seccion {
+        padding: 15px; /* Compacta las secciones */
+        margin-bottom: 20px;
+    }
+    .form-contacto {
+        gap: 10px; /* Reduce la separación entre campos del formulario */
     }
 }
 
