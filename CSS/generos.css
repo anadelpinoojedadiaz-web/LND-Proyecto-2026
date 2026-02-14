@@ -22,53 +22,169 @@
             text-align: center; 
         }
 
-        .grid-generos {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            padding: 40px 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-        .tarjeta-genero {
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-            text-decoration: none;
-            color: #333;
-            display: block;
-        }
-        .tarjeta-genero:hover { transform: translateY(-10px); background: #fdf2e9; }
+        /* VARIABLES GLOBALES */
+:root {
+    --primario: #2c3e50;
+    --acento: #d35400;
+    --fondo: #f4f4f4;
+    --blanco: #ffffff;
+    --sombra: rgba(0, 0, 0, 0.1);
+}
 
-        /* Listado de Libros */
-        .contenedor-listas-libros { max-width: 1200px; margin: auto; padding: 20px; }
-        .seccion-libros { margin-top: 60px; border-top: 2px solid #2c3e50; padding-top: 40px; }
-        .grid-libros-categoria {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        .item-libro {
-            display: flex;
-            gap: 15px;
-            background: white;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-        .item-libro img {
-            width: 100px;
-            height: 150px;
-            background: #eee;
-            border: 1px solid #ddd;
-            object-fit: cover;
-        }
-        .resena-info h3 { margin: 0 0 10px 0; font-size: 1.1rem; }
-        .meta { font-size: 0.8rem; color: #666; margin-bottom: 10px; }
-        .extracto { font-size: 0.9rem; color: #444; margin-bottom: 10px; line-height: 1.4; }
+/* ESTILOS BASE */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: var(--fondo);
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* HERO CON VIDEO */
+.hero-video {
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-video video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.45);
+}
+
+.hero-video h2 {
+    color: white;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 15px rgba(0,0,0,0.6);
+    margin: 0;
+}
+
+/* NAVEGACIÓN DE CATEGORÍAS (Botones) */
+.categorias-nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 2.5rem;
+    max-width: 1200px;
+    margin: -50px auto 0; /* Efecto flotante sobre el hero */
+    position: relative;
+    z-index: 10;
+}
+
+.cat-card {
+    background: var(--blanco);
+    padding: 1.2rem;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--primario);
+    font-weight: bold;
+    box-shadow: 0 4px 15px var(--sombra);
+    transition: all 0.3s ease;
+}
+
+.cat-card:hover {
+    background: var(--acento);
+    color: white;
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(211, 84, 0, 0.3);
+}
+
+/* SECCIONES DE GÉNERO (Mantenido Blanco) */
+.seccion-genero {
+    max-width: 1150px;
+    margin: 3rem auto;
+    padding: 2.5rem;
+    background: var(--blanco);
+    border-radius: 15px;
+    box-shadow: 0 5px 25px var(--sombra);
+}
+
+.titulo-genero {
+    border-left: 6px solid var(--acento);
+    padding-left: 15px;
+    margin-bottom: 35px;
+    color: var(--primario);
+    font-size: 1.8rem;
+}
+
+/* GRID DE LIBROS */
+.grid-libros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.libro-card {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    border: 1px solid #f0f0f0;
+    border-radius: 12px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.libro-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px var(--sombra);
+}
+
+.libro-card img {
+    width: 100px;
+    height: 145px;
+    background-color: #eee;
+    border-radius: 6px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.info-libro h3 { 
+    margin: 0 0 8px 0; 
+    font-size: 1.1rem; 
+    line-height: 1.2;
+}
+
+.meta { font-size: 0.85rem; color: #777; margin-bottom: 8px; }
+.extracto { font-size: 0.9rem; line-height: 1.5; color: #555; margin-bottom: 12px; }
+.ratings { color: #f1c40f; font-size: 0.9rem; margin-bottom: 15px; }
+
+.boton-leer {
+    display: inline-block;
+    background: var(--primario);
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    transition: background 0.3s;
+}
+
+.boton-leer:hover { background: var(--acento); }
+
+.volver {
+    display: block;
+    margin-top: 25px;
+    text-align: right;
+    color: var(--acento);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero-video h2 { font-size: 2.2rem; }
+    .categorias-nav { margin-top: 20px; padding: 1rem; }
+    .grid-libros { grid-template-columns: 1fr; }
+}
         .ratings { color: #d35400; font-weight: bold; margin-bottom: 15px; }
         .boton-leer {
             display: inline-block;
