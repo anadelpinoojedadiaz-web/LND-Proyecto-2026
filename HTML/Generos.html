@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generos - El Censo Literario</title>
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/generos.css">
+    <link rel="icon" type="image/x-icon" href="../Images/Favicon.png">
 </head>
+
 <body>
     <header>
-        <h1>El Censo Literario</h1>
+        <h1>
+            <div class="logo-icon"></div>El Censo Literario
+        </h1>
         <h4>¡Tu guía definitva para encontrar tu futuro libro favorito!</h4>
     </header>
 
-     <nav>
+    <nav>
         <a href="../Index.html">Inicio</a>
         <a href="Reseñas.html">Reseñas</a>
         <a href="Generos.html">Géneros</a>
@@ -22,118 +27,319 @@
     </nav>
 
     <section class="hero-video">
-    <video autoplay muted loop playsinline>
-        <source src="../Images/video-fondo.mp4" type="video/mp4">
-    </video>
-    <h2>Categorías Literarias</h2>
-</section>
-
-<nav class="categorias-nav">
-    <a href="#negra" class="cat-card">🕵️ Novela Negra</a>
-    <a href="#ciencia-ficcion" class="cat-card">👽 Ciencia Ficción</a>
-    <a href="#romance" class="cat-card">❤️ Romance</a>
-    <a href="#fantasia" class="cat-card">🐉 Fantasía</a>
-    <a href="#teatro" class="cat-card">🎭 Teatro</a>
-    <a href="#terror" class="cat-card">👻 Terror psicológico</a>
-    <a href="#cocina" class="cat-card">🍳 Cocina</a>
-    <a href="#poesia" class="cat-card">🖋️ Poesía</a>
-    <a href="#biografias" class="cat-card">👤 Biografía</a>
-    <a href="#historia" class="cat-card">🏛️ Historia</a>
-    <a href="#juveniles" class="cat-card">🧒 Infantil/Juvenil</a>
-    <a href="#autoayuda" class="cat-card">🌱 Autoayuda</a>
-    <a href="#aventura" class="cat-card">🗺️ Aventura</a>
-</nav>
-
-<l>
-    <section id="negra" class="seccion-genero">
-        <h2 class="titulo-genero">🕵️ NOVELA NEGRA</h2>
-        <div class="grid-libros">
-            <script>
-                const novelaNegra = [
-                    "El halcón maltés – Dashiell Hammett", "El sueño eterno – Raymond Chandler", 
-                    "Los hombres que no amaban a las mujeres – Stieg Larsson", "La chica del tren – Paula Hawkins",
-                    "Perdida – Gillian Flynn", "La ventana secreta – Stephen King", 
-                    "El silencio de los corderos – Thomas Harris", "Asesinato en el Orient Express – Agatha Christie",
-                    "Diez negritos – Agatha Christie", "El nombre de la rosa – Umberto Eco",
-                    "La muerte tiene un precio – James M. Cain", "El coleccionista de huesos – Jeffery Deaver",
-                    "Sherlock Holmes: Estudio en escarlata – Arthur Conan Doyle", "Policía – Jo Nesbø",
-                    "La comunidad – Fred Vargas", "El invierno del lobo – Craig Johnson",
-                    "El alquimista impaciente – Lorenzo Silva", "El verano de los juguetes muertos – Toni Hill",
-                    "Muerte en el Nilo – Agatha Christie", "La reina en el palacio de las corrientes de aire – Stieg Larsson"
-                ];
-
-                novelaNegra.forEach(libro => {
-                    document.write(`
-                        <article class="libro-card">
-                            <img src="" alt="Portada ${libro}">
-                            <div class="info-libro">
-                                <h3>${libro}</h3>
-                                <p class="meta">Reseña by @lector_pro • <span>Hace una semana</span></p>
-                                <p class="extracto">Una trama magistral que mantiene la tensión hasta la última página...</p>
-                                <div class="ratings">Ratings: ★★★★★</div>
-                                <a href="resena-completa-100.html" class="boton-leer">Leer reseña completa</a>
-                            </div>
-                        </article>
-                    `);
-                });
-            </script>
-        </div>
-        <a href="#" class="volver">Volver arriba ↑</a>
+        <video autoplay muted loop playsinline>
+            <source src="../Images/video-fondo.mp4" type="video/mp4">
+        </video>
+        <h2>Categorías Literarias</h2>
     </section>
 
-    <section id="ciencia-ficcion" class="seccion-genero">
-        <h2 class="titulo-genero">👽 CIENCIA FICCIÓN</h2>
-        <div class="grid-libros">
-            <script>
-               const cienciaFiccion = [
-                    "1984 – George Orwell", "Fahrenheit 451 – Ray Bradbury", "Dune – Frank Herbert",
-                    "El fin de la eternidad – Isaac Asimov", "Un mundo feliz – Aldous Huxley",
-                    "Neuromante – William Gibson", "Snow Crash – Neal Stephenson", "La guerra de los mundos – H.G. Wells",
-                    "Crónicas marcianas – Ray Bradbury", "El juego de Ender – Orson Scott Card",
-                    "Fundación – Isaac Asimov", "Los desposeídos – Ursula K. Le Guin", "Hyperion – Dan Simmons",
-                    "La mano izquierda de la oscuridad – Ursula K. Le Guin", "Solaris – Stanislaw Lem",
-                    "Ready Player One – Ernest Cline", "La carretera – Cormac McCarthy", "El hombre ilustrado – Ray Bradbury",
-                    "Altered Carbon – Richard K. Morgan", "La chica mecánica – Paolo Bacigalupi"
-                ];
+    <nav class="categorias-nav">
+        <a href="#negra" class="cat-card">🕵️ Novela Negra</a>
+        <a href="#ciencia-ficcion" class="cat-card">👽 Ciencia Ficción</a>
+        <a href="#romance" class="cat-card">❤️ Romance</a>
+        <a href="#fantasia" class="cat-card">🐉 Fantasía</a>
+        <a href="#teatro" class="cat-card">🎭 Teatro</a>
+        <a href="#terror" class="cat-card">👻 Terror psicológico</a>
+        <a href="#cocina" class="cat-card">🍳 Cocina</a>
+        <a href="#poesia" class="cat-card">🖋️ Poesía</a>
+        <a href="#biografias" class="cat-card">👤 Biografía</a>
+        <a href="#historia" class="cat-card">🏛️ Historia</a>
+        <a href="#juveniles" class="cat-card">🧒 Infantil/Juvenil</a>
+        <a href="#autoayuda" class="cat-card">🌱 Autoayuda</a>
+        <a href="#aventura" class="cat-card">🗺️ Aventura</a>
+    </nav>
 
-                cienciaFiccion.forEach(libro => {
-                    document.write(`
-                        <article class="libro-card">
-                            <img src="" alt="Portada ${libro}">
-                            <div class="info-libro">
-                                <h3>${libro}</h3>
-                                <p class="meta">Reseña by @lector_pro • <span>Hace una semana</span></p>
-                                <p class="extracto">Exploración fascinante de futuros posibles y dilemas tecnológicos...</p>
-                                <div class="ratings">Ratings: ★★★★★</div>
-                                <a href="resena-completa-200.html" class="boton-leer">Leer reseña completa</a>
-                            </div>
-                        </article>
-                    `);
-                });
-            </script>
-        </div>
-        <a href="#" class="volver">Volver arriba ↑</a>
-    </section>
+    <l>
+        <section id="negra" class="seccion-genero">
+            <h2 class="titulo-genero">🕵️ NOVELA NEGRA</h2>
+            <div class="grid-libros">
+                <article class="libro-card">
+                    <img src="../Images/hacon-maltes.webp" alt="Portada ${libro}">
+                    <div class="info-libro">
+                        <h3>El Halcon Maltés</h3>
+                        <p class="meta">Reseña by @lector_pro • <span>Hace una semana</span></p>
+                        <p class="extracto">Una trama magistral que mantiene la tensión hasta la última página...</p>
+                        <div class="ratings">Ratings: ★★★★★</div>
+                        <a href="resena-completa-100.html" class="boton-leer">Leer reseña completa</a>
+                    </div>
+                    <img src="../Images/EL-SUENO-ETERNO.webp" alt="Portada ${libro}">
+                    <div class="info-libro">
+                        <h3>El sueño eterno</h3>
+                        <p class="meta">Reseña by @lector_pro • <span>Hace una semana</span></p>
+                        <p class="extracto">Una trama magistral que mantiene la tensión hasta la última página...</p>
+                        <div class="ratings">Ratings: ★★★★★</div>
+                        <a href="resena-completa-100.html" class="boton-leer">Leer reseña completa</a>
+                    </div>
+                    <div class="libro-card">
+                        <img src="../Images/hombres-no-amaban-mujeres.jpg" alt="Portada ${libro}">
+                        <div class="info-libro">
+                            <h3>Los hombres que no amaban a las mujeres</h3>
+                            <p class="meta">Reseña by @lector_pro • <span>Hace una semana</span></p>
+                            <p class="extracto">Una trama magistral que mantiene la tensión hasta la última página...
+                            </p>
+                            <div class="ratings">Ratings: ★★★★★</div>
+                            <a href="resena-completa-100.html" class="boton-leer">Leer reseña completa</a>
+                        </div>
+                    </div>
 
-<section id="romance" class="seccion-genero">
-        <h2 class="titulo-genero">❤️ ROMANCE</h2>
-        <div class="grid-libros">
-            <script>
-                const romance = [
-                    "Orgullo y prejuicio – Jane Austen", "Cumbres borrascosas – Emily Brontë", 
-                    "Jane Eyre – Charlotte Brontë", "Bajo la misma estrella – John Green", 
-                    "El cuaderno de Noah – Nicholas Sparks", "Outlander – Diana Gabaldon", 
-                    "After – Anna Todd", "La sombra del viento – Carlos Ruiz Zafón", 
-                    "Los puentes de Madison County – Robert James Waller", "El amor en los tiempos del cólera – Gabriel García Márquez", 
-                    "Me before You – Jojo Moyes", "Anna and the French Kiss – Stephanie Perkins", 
-                    "Twilight (Crepúsculo) – Stephenie Meyer", "Eleanor & Park – Rainbow Rowell", 
-                    "Persuasión – Jane Austen", "El arte de amar – Erich Fromm", 
-                    "La mecánica del corazón – Mathias Malzieu", "Un paseo para recordar – Nicholas Sparks", 
-                    "It Ends with Us – Colleen Hoover", "The Notebook – Nicholas Sparks"
-                ];
+                    <div class="libro-card">
+                        <img src="../Images/chica-tren.jpg" alt="Portada ${libro}">
+                        <div class="info-libro">
+                            <h3>La chica del tren</h3>
+                            <p class="meta">Reseña by @lector_pro • <span>Hace una semana</span></p>
+                            <p class="extracto">Una trama magistral que mantiene la tensión hasta la última página...
+                            </p>
+                            <div class="ratings">Ratings: ★★★★★</div>
+                            <a href="resena-completa-100.html" class="boton-leer">Leer reseña completa</a>
+                        </div>
+                    </div>
 
-                romance.forEach(libro => {
-                    document.write(`
+                    <div class="libro-card">
+                        <img src="../Images/perdida.jpg" alt="Portada ${libro}">
+                        <div class="info-libro">
+                            <h3>Perdida</h3>
+                            <p class="meta">Reseña by @lector_pro • <span>Hace una semana</span></p>
+                            <p class="extracto">Una trama magistral que mantiene la tensión hasta la última página...
+                            </p>
+                            <div class="ratings">Ratings: ★★★★★</div>
+                            <a href="resena-completa-100.html" class="boton-leer">Leer reseña completa</a>
+                        </div>
+                    </div>
+
+                    <div class="libro-card">
+                        <img src="../Images/ventana-secreta.jpg" alt="Portada ${libro}">
+                        <div class="info-libro">
+                            <h3>La ventana secreta</h3>
+                            <p class="meta">Reseña by @lector_pro • <span>Hace una semana</span></p>
+                            <p class="extracto">Una trama magistral que mantiene la tensión hasta la última página...
+                            </p>
+                            <div class="ratings">Ratings: ★★★★★</div>
+                            <a href="resena-completa-100.html" class="boton-leer">Leer reseña completa</a>
+                        </div>
+                    </div>
+
+                    <div class="libro-card">
+                        <img src="../Images/silencio-corderos.jpg" alt="Portada ${libro}">
+                        <div class="info-libro">
+                            <h3>El silencio de los corderos</h3>
+                            <p class="meta">Reseña by @lector_pro • <span>Hace una semana</span></p>
+                            <p class="extracto">Una trama magistral que mantiene la tensión hasta la última página...
+                            </p>
+                            <div class="ratings">Ratings: ★★★★★</div>
+                            <a href="resena-completa-100.html" class="boton-leer">Leer reseña completa</a>
+                        </div>
+                    </div>
+
+                    <div class="libro-card">
+                        <img src="../Images/asesinato-orient-express.jpg" alt="Portada ${libro}">
+                        <div class="info-libro">
+                            <h3>Asesinato en el Orient Express</h3>
+                            <p class="meta">Reseña by @lector_pro • <span>Hace una semana</span></p>
+                            <p class="extracto">Una trama magistral que mantiene la tensión hasta la última página...
+                            </p>
+                            <div class="ratings">Ratings: ★★★★★</div>
+                            <a href="resena-completa-100.html" class="boton-leer">Leer reseña completa</a>
+                        </div>
+                    </div>
+
+                    <div class="libro-card">
+                        <img src="../Images/10-minutos.jpg" alt="Portada ${libro}">
+                        <div class="info-libro">
+                            <h3>Diez negritos</h3>
+                            <p class="meta">Reseña by @lector_pro • <span>Hace una semana</span></p>
+                            <p class="extracto">Una trama magistral que mantiene la tensión hasta la última página...
+                            </p>
+                            <div class="ratings">Ratings: ★★★★★</div>
+                            <a href="resena-completa-100.html" class="boton-leer">Leer reseña completa</a>
+                        </div>
+                    </div>
+
+                    <div class="libro-card">
+                        <img src="../Images/nombre-rosa.jpg" alt="Portada ${libro}">
+                        <div class="info-libro">
+                            <h3>El nombre de la rosa</h3>
+                            <p class="meta">Reseña by @lector_pro • <span>Hace una semana</span></p>
+                            <p class="extracto">Una trama magistral que mantiene la tensión hasta la última página...
+                            </p>
+                            <div class="ratings">Ratings: ★★★★★</div>
+                            <a href="resena-completa-100.html" class="boton-leer">Leer reseña completa</a>
+                        </div>
+                    </div>
+
+                    <div class="libro-card">
+                        <img src="../Images/cartero-llama-2-veces.jpg" alt="Portada ${libro}">
+                        <div class="info-libro">
+                            <h3>El cartero siempre llama dos veces</h3>
+                            <p class="meta">Reseña by @lector_pro • <span>Hace una semana</span></p>
+                            <p class="extracto">Una trama magistral que mantiene la tensión hasta la última página...
+                            </p>
+                            <div class="ratings">Ratings: ★★★★★</div>
+                            <a href="resena-completa-100.html" class="boton-leer">Leer reseña completa</a>
+                        </div>
+                    </div>
+
+                    <div class="libro-card">
+                        <img src="../Images/coleccionista-huesos.jpg" alt="Portada ${libro}">
+                        <div class="info-libro">
+                            <h3>El coleccionista de huesos</h3>
+                            <p class="meta">Reseña by @lector_pro • <span>Hace una semana</span></p>
+                            <p class="extracto">Una trama magistral que mantiene la tensión hasta la última página...
+                            </p>
+                            <div class="ratings">Ratings: ★★★★★</div>
+                            <a href="resena-completa-100.html" class="boton-leer">Leer reseña completa</a>
+                        </div>
+                    </div>
+
+                    <div class="libro-card">
+                        <img src="../Images/estudio-en-escarlata.jpg" alt="Portada ${libro}">
+                        <div class="info-libro">
+                            <h3>Sherlock Holmes: Estudio en escarlata</h3>
+                            <p class="meta">Reseña by @lector_pro • <span>Hace una semana</span></p>
+                            <p class="extracto">Una trama magistral que mantiene la tensión hasta la última página...
+                            </p>
+                            <div class="ratings">Ratings: ★★★★★</div>
+                            <a href="resena-completa-100.html" class="boton-leer">Leer reseña completa</a>
+                        </div>
+                    </div>
+
+                    <div class="libro-card">
+                        <img src="../Images/policia.jpg" alt="Portada ${libro}">
+                        <div class="info-libro">
+                            <h3>Policía</h3>
+                            <p class="meta">Reseña by @lector_pro • <span>Hace una semana</span></p>
+                            <p class="extracto">Una trama magistral que mantiene la tensión hasta la última página...
+                            </p>
+                            <div class="ratings">Ratings: ★★★★★</div>
+                            <a href="resena-completa-100.html" class="boton-leer">Leer reseña completa</a>
+                        </div>
+                    </div>
+
+                    <div class="libro-card">
+                        <img src="../Images/comunidad.jpg" alt="Portada ${libro}">
+                        <div class="info-libro">
+                            <h3>La comunidad</h3>
+                            <p class="meta">Reseña by @lector_pro • <span>Hace una semana</span></p>
+                            <p class="extracto">Una trama magistral que mantiene la tensión hasta la última página...
+                            </p>
+                            <div class="ratings">Ratings: ★★★★★</div>
+                            <a href="resena-completa-100.html" class="boton-leer">Leer reseña completa</a>
+                        </div>
+                    </div>
+
+                    <div class="libro-card">
+                        <img src="../Images/invierno-del-lobo.jpg" alt="Portada ${libro}">
+                        <div class="info-libro">
+                            <h3>El invierno del lobo</h3>
+                            <p class="meta">Reseña by @lector_pro • <span>Hace una semana</span></p>
+                            <p class="extracto">Una trama magistral que mantiene la tensión hasta la última página...
+                            </p>
+                            <div class="ratings">Ratings: ★★★★★</div>
+                            <a href="resena-completa-100.html" class="boton-leer">Leer reseña completa</a>
+                        </div>
+                    </div>
+
+                    <div class="libro-card">
+                        <img src="../Images/alquimista-impaciente.jpg" alt="Portada ${libro}">
+                        <div class="info-libro">
+                            <h3>El alquimista impaciente</h3>
+                            <p class="meta">Reseña by @lector_pro • <span>Hace una semana</span></p>
+                            <p class="extracto">Una trama magistral que mantiene la tensión hasta la última página...
+                            </p>
+                            <div class="ratings">Ratings: ★★★★★</div>
+                            <a href="resena-completa-100.html" class="boton-leer">Leer reseña completa</a>
+                        </div>
+                    </div>
+
+                    <div class="libro-card">
+                        <img src="../Images/verano-juguetes-muertos.jpg" alt="Portada ${libro}">
+                        <div class="info-libro">
+                            <h3>El verano de los juguetes muertos</h3>
+                            <p class="meta">Reseña by @lector_pro • <span>Hace una semana</span></p>
+                            <p class="extracto">Una trama magistral que mantiene la tensión hasta la última página...
+                            </p>
+                            <div class="ratings">Ratings: ★★★★★</div>
+                            <a href="resena-completa-100.html" class="boton-leer">Leer reseña completa</a>
+                        </div>
+                    </div>
+
+                    <div class="libro-card">
+                        <img src="../Images/muerte-el-nilo.jpg" alt="Portada ${libro}">
+                        <div class="info-libro">
+                            <h3>Muerte en el Nilo</h3>
+                            <p class="meta">Reseña by @lector_pro • <span>Hace una semana</span></p>
+                            <p class="extracto">Una trama magistral que mantiene la tensión hasta la última página...
+                            </p>
+                            <div class="ratings">Ratings: ★★★★★</div>
+                            <a href="resena-completa-100.html" class="boton-leer">Leer reseña completa</a>
+                        </div>
+                    </div>
+
+                    <div class="libro-card">
+                        <img src="../Images/reina-palacio-correintes-aire.jpg" alt="Portada ${libro}">
+                        <div class="info-libro">
+                            <h3>La reina en el palacio de las corrientes de aire</h3>
+                            <p class="meta">Reseña by @lector_pro • <span>Hace una semana</span></p>
+                            <p class="extracto">Una trama magistral que mantiene la tensión hasta la última página...
+                            </p>
+                            <div class="ratings">Ratings: ★★★★★</div>
+                            <a href="resena-completa-100.html" class="boton-leer">Leer reseña completa</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+            <a href="#" class="volver">Volver arriba ↑</a>
+        </section>
+
+        <section id="ciencia-ficcion" class="seccion-genero">
+            <h2 class="titulo-genero">👽 CIENCIA FICCIÓN</h2>
+            <div class="grid-libros">
+
+                "1984 – George Orwell", "Fahrenheit 451 – Ray Bradbury", "Dune – Frank Herbert",
+                "El fin de la eternidad – Isaac Asimov", "Un mundo feliz – Aldous Huxley",
+                "Neuromante – William Gibson", "Snow Crash – Neal Stephenson", "La guerra de los mundos – H.G. Wells",
+                "Crónicas marcianas – Ray Bradbury", "El juego de Ender – Orson Scott Card",
+                "Fundación – Isaac Asimov", "Los desposeídos – Ursula K. Le Guin", "Hyperion – Dan Simmons",
+                "La mano izquierda de la oscuridad – Ursula K. Le Guin", "Solaris – Stanislaw Lem",
+                "Ready Player One – Ernest Cline", "La carretera – Cormac McCarthy", "El hombre ilustrado – Ray
+                Bradbury",
+                "Altered Carbon – Richard K. Morgan", "La chica mecánica – Paolo Bacigalupi"
+
+
+                <article class="libro-card">
+                    <img src="../Images/1984.jpg" alt="Portada ${libro}">
+                    <div class="info-libro">
+                        <h3>1984 by George Orwell</h3>
+                        <p class="meta">Reseña by @lector_pro • <span>Hace una semana</span></p>
+                        <p class="extracto">Exploración fascinante de futuros posibles y dilemas tecnológicos...</p>
+                        <div class="ratings">Ratings: ★★★★★</div>
+                        <a href="resena-completa-200.html" class="boton-leer">Leer reseña completa</a>
+                    </div>
+                </article>
+
+            </div>
+            <a href="#" class="volver">Volver arriba ↑</a>
+        </section>
+
+        <section id="romance" class="seccion-genero">
+            <h2 class="titulo-genero">❤️ ROMANCE</h2>
+            <div class="grid-libros">
+                <script>
+                    const romance = [
+                        "Orgullo y prejuicio – Jane Austen", "Cumbres borrascosas – Emily Brontë",
+                        "Jane Eyre – Charlotte Brontë", "Bajo la misma estrella – John Green",
+                        "El cuaderno de Noah – Nicholas Sparks", "Outlander – Diana Gabaldon",
+                        "After – Anna Todd", "La sombra del viento – Carlos Ruiz Zafón",
+                        "Los puentes de Madison County – Robert James Waller", "El amor en los tiempos del cólera – Gabriel García Márquez",
+                        "Me before You – Jojo Moyes", "Anna and the French Kiss – Stephanie Perkins",
+                        "Twilight (Crepúsculo) – Stephenie Meyer", "Eleanor & Park – Rainbow Rowell",
+                        "Persuasión – Jane Austen", "El arte de amar – Erich Fromm",
+                        "La mecánica del corazón – Mathias Malzieu", "Un paseo para recordar – Nicholas Sparks",
+                        "It Ends with Us – Colleen Hoover", "The Notebook – Nicholas Sparks"
+                    ];
+
+                    romance.forEach(libro => {
+                        document.write(`
                         <article class="libro-card">
                             <img src="" alt="Portada ${libro}">
                             <div class="info-libro">
@@ -145,31 +351,31 @@
                             </div>
                         </article>
                     `);
-                });
-            </script>
-        </div>
-        <a href="#" class="volver">Volver arriba ↑</a>
-    </section>
+                    });
+                </script>
+            </div>
+            <a href="#" class="volver">Volver arriba ↑</a>
+        </section>
 
-    <section id="fantasia" class="seccion-genero">
-        <h2 class="titulo-genero">🐉 FANTASÍA</h2>
-        <div class="grid-libros">
-            <script>
-                const fantasia = [
-                    "El Señor de los Anillos – J.R.R. Tolkien", "Harry Potter y la piedra filosofal – J.K. Rowling", 
-                    "Harry Potter y las demás entregas – J.K. Rowling", "Juego de tronos – George R.R. Martin", 
-                    "El Hobbit – J.R.R. Tolkien", "Las crónicas de Narnia – C.S. Lewis", 
-                    "La rueda del tiempo – Robert Jordan", "El nombre del viento – Patrick Rothfuss", 
-                    "La primera ley – Joe Abercrombie", "Mistborn: El imperio final – Brandon Sanderson", 
-                    "El archivo de las tormentas – Brandon Sanderson", "El ciclo del Legado – Christopher Paolini", 
-                    "El príncipe cruel – Holly Black", "American Gods – Neil Gaiman", 
-                    "La canción de Aquiles – Madeline Miller", "El bosque nocturno – Melissa Albert", 
-                    "Elantris – Brandon Sanderson", "El mago de Terramar – Ursula K. Le Guin", 
-                    "La historia interminable – Michael Ende", "El nombre del viento – Patrick Rothfuss"
-                ];
+        <section id="fantasia" class="seccion-genero">
+            <h2 class="titulo-genero">🐉 FANTASÍA</h2>
+            <div class="grid-libros">
+                <script>
+                    const fantasia = [
+                        "El Señor de los Anillos – J.R.R. Tolkien", "Harry Potter y la piedra filosofal – J.K. Rowling",
+                        "Harry Potter y las demás entregas – J.K. Rowling", "Juego de tronos – George R.R. Martin",
+                        "El Hobbit – J.R.R. Tolkien", "Las crónicas de Narnia – C.S. Lewis",
+                        "La rueda del tiempo – Robert Jordan", "El nombre del viento – Patrick Rothfuss",
+                        "La primera ley – Joe Abercrombie", "Mistborn: El imperio final – Brandon Sanderson",
+                        "El archivo de las tormentas – Brandon Sanderson", "El ciclo del Legado – Christopher Paolini",
+                        "El príncipe cruel – Holly Black", "American Gods – Neil Gaiman",
+                        "La canción de Aquiles – Madeline Miller", "El bosque nocturno – Melissa Albert",
+                        "Elantris – Brandon Sanderson", "El mago de Terramar – Ursula K. Le Guin",
+                        "La historia interminable – Michael Ende", "El nombre del viento – Patrick Rothfuss"
+                    ];
 
-                fantasia.forEach(libro => {
-                    document.write(`
+                    fantasia.forEach(libro => {
+                        document.write(`
                         <article class="libro-card">
                             <img src="" alt="Portada ${libro}">
                             <div class="info-libro">
@@ -181,31 +387,31 @@
                             </div>
                         </article>
                     `);
-                });
-            </script>
-        </div>
-        <a href="#" class="volver">Volver arriba ↑</a>
-    </section>
+                    });
+                </script>
+            </div>
+            <a href="#" class="volver">Volver arriba ↑</a>
+        </section>
 
-    <section id="teatro" class="seccion-genero">
-        <h2 class="titulo-genero">🎭 TEATRO</h2>
-        <div class="grid-libros">
-            <script>
-                const teatro = [
-                    "Romeo y Julieta – William Shakespeare", "Hamlet – William Shakespeare", 
-                    "La casa de Bernarda Alba – Federico García Lorca", "Esperando a Godot – Samuel Beckett", 
-                    "Un enemigo del pueblo – Henrik Ibsen", "La importancia de llamarse Ernesto – Oscar Wilde", 
-                    "Cyrano de Bergerac – Edmond Rostand", "El sueño de una noche de verano – William Shakespeare", 
-                    "Otelo – William Shakespeare", "Macbeth – William Shakespeare", 
-                    "Antígona – Sófocles", "La vida es sueño – Calderón de la Barca", 
-                    "Casa de muñecas – Henrik Ibsen", "Tartufo – Molière", 
-                    "El rey Lear – William Shakespeare", "Medea – Eurípides", 
-                    "Richard III – William Shakespeare", "Sueño con mujeres que se afeitan las piernas – Dario Fo", 
-                    "La cantante calva – Eugène Ionesco", "Bodas de sangre – Federico García Lorca"
-                ];
+        <section id="teatro" class="seccion-genero">
+            <h2 class="titulo-genero">🎭 TEATRO</h2>
+            <div class="grid-libros">
+                <script>
+                    const teatro = [
+                        "Romeo y Julieta – William Shakespeare", "Hamlet – William Shakespeare",
+                        "La casa de Bernarda Alba – Federico García Lorca", "Esperando a Godot – Samuel Beckett",
+                        "Un enemigo del pueblo – Henrik Ibsen", "La importancia de llamarse Ernesto – Oscar Wilde",
+                        "Cyrano de Bergerac – Edmond Rostand", "El sueño de una noche de verano – William Shakespeare",
+                        "Otelo – William Shakespeare", "Macbeth – William Shakespeare",
+                        "Antígona – Sófocles", "La vida es sueño – Calderón de la Barca",
+                        "Casa de muñecas – Henrik Ibsen", "Tartufo – Molière",
+                        "El rey Lear – William Shakespeare", "Medea – Eurípides",
+                        "Richard III – William Shakespeare", "Sueño con mujeres que se afeitan las piernas – Dario Fo",
+                        "La cantante calva – Eugène Ionesco", "Bodas de sangre – Federico García Lorca"
+                    ];
 
-                teatro.forEach(libro => {
-                    document.write(`
+                    teatro.forEach(libro => {
+                        document.write(`
                         <article class="libro-card">
                             <img src="" alt="Portada ${libro}">
                             <div class="info-libro">
@@ -217,31 +423,31 @@
                             </div>
                         </article>
                     `);
-                });
-            </script>
-        </div>
-        <a href="#" class="volver">Volver arriba ↑</a>
-    </section>
+                    });
+                </script>
+            </div>
+            <a href="#" class="volver">Volver arriba ↑</a>
+        </section>
 
-    <section id="terror" class="seccion-genero">
-        <h2 class="titulo-genero">👻 TERROR PSICOLÓGICO</h2>
-        <div class="grid-libros">
-            <script>
-                const terror = [
-                    "El resplandor – Stephen King", "La chica de al lado – Jack Ketchum", 
-                    "Misery – Stephen King", "El exorcista – William Peter Blatty", 
-                    "El silencio de los corderos – Thomas Harris", "Drácula – Bram Stoker", 
-                    "Frankenstein – Mary Shelley", "La maldición de Hill House – Shirley Jackson", 
-                    "La casa de los espíritus – Isabel Allende", "Bird Box – Josh Malerman", 
-                    "Coraline – Neil Gaiman", "El sexto sentido – adaptaciones varias", 
-                    "El jardín secreto (terror)", "El retrato de Dorian Gray – Oscar Wilde", 
-                    "La Semilla del Diablo – Ira Levin", "La invitación – Koren Zailckas", 
-                    "Penpal – Dathan Auerbach", "El turno de noche – Stephen King", 
-                    "La mujer de negro – Susan Hill", "Ghost Stories – ed. comp."
-                ];
+        <section id="terror" class="seccion-genero">
+            <h2 class="titulo-genero">👻 TERROR PSICOLÓGICO</h2>
+            <div class="grid-libros">
+                <script>
+                    const terror = [
+                        "El resplandor – Stephen King", "La chica de al lado – Jack Ketchum",
+                        "Misery – Stephen King", "El exorcista – William Peter Blatty",
+                        "El silencio de los corderos – Thomas Harris", "Drácula – Bram Stoker",
+                        "Frankenstein – Mary Shelley", "La maldición de Hill House – Shirley Jackson",
+                        "La casa de los espíritus – Isabel Allende", "Bird Box – Josh Malerman",
+                        "Coraline – Neil Gaiman", "El sexto sentido – adaptaciones varias",
+                        "El jardín secreto (terror)", "El retrato de Dorian Gray – Oscar Wilde",
+                        "La Semilla del Diablo – Ira Levin", "La invitación – Koren Zailckas",
+                        "Penpal – Dathan Auerbach", "El turno de noche – Stephen King",
+                        "La mujer de negro – Susan Hill", "Ghost Stories – ed. comp."
+                    ];
 
-                terror.forEach(libro => {
-                    document.write(`
+                    terror.forEach(libro => {
+                        document.write(`
                         <article class="libro-card">
                             <img src="" alt="Portada ${libro}">
                             <div class="info-libro">
@@ -253,21 +459,24 @@
                             </div>
                         </article>
                     `);
-                });
-            </script>
-        </div>
-        <a href="#" class="volver">Volver arriba ↑</a>
-    </section>
+                    });
+                </script>
+            </div>
+            <a href="#" class="volver">Volver arriba ↑</a>
+        </section>
 
-    <section id="cocina" class="seccion-genero">
-        <h2 class="titulo-genero">🍳 LIBROS DE COCINA</h2>
-        <div class="grid-libros">
-            <script>
-                const cocina = [
-                    "Joy of Cooking – Irma S. Rombauer", "Mastering the Art of French Cooking – Julia Child", "Salt, Fat, Acid, Heat – Samin Nosrat", "The Food Lab – J. Kenji López-Alt", "Cómo ser un chef – Michael Ruhlman", "Nigella Bites – Nigella Lawson", "Plenty – Yotam Ottolenghi", "Jerusalem – Yotam Ottolenghi & Sami Tamimi", "La cocina de la felicidad – Nigella Lawson", "Ottolenghi Simple – Yotam Ottolenghi", "The Barefoot Contessa Cookbook – Ina Garten", "Baking: From My Home to Yours – Dorie Greenspan", "Vegetarian Cooking for Everyone – Deborah Madison", "The Silver Spoon – ed. Phaidon", "Essential Pépin – Jacques Pépin", "Salted – Niki Segnit", "The Flavor Bible – Karen Page & Andrew Dornenburg", "Plátanos y otros frutos", "Cocina regional española", "El arte del sushi"
-                ];
-                cocina.forEach(libro => {
-                    document.write(`
+        <section id="cocina" class="seccion-genero">
+            <h2 class="titulo-genero">🍳 LIBROS DE COCINA</h2>
+            <div class="grid-libros">
+                <script>
+                    const cocina = [
+                        "Joy of Cooking – Irma S. Rombauer", "Mastering the Art of French Cooking – Julia Child", "Salt, Fat, Acid, Heat – Samin Nosrat", "The Food Lab – J. Kenji López-Alt", "Cómo ser un chef – Michael Ruhlman", "Nigella Bites – Nigella Lawson",
+                        "Plenty – Yotam Ottolenghi", "Jerusalem – Yotam Ottolenghi & Sami Tamimi", "La cocina de la felicidad – Nigella Lawson", "Ottolenghi Simple – Yotam Ottolenghi", "The Barefoot Contessa Cookbook – Ina Garten",
+                        "Baking: From My Home to Yours – Dorie Greenspan", "Vegetarian Cooking for Everyone – Deborah Madison", "The Silver Spoon – ed. Phaidon", "Essential Pépin – Jacques Pépin", "Salted – Niki Segnit",
+                        "The Flavor Bible – Karen Page & Andrew Dornenburg", "Plátanos y otros frutos", "Cocina regional española", "El arte del sushi"
+                    ];
+                    cocina.forEach(libro => {
+                        document.write(`
                         <article class="libro-card">
                             <img src="" alt="Portada ${libro}">
                             <div class="info-libro">
@@ -279,21 +488,24 @@
                             </div>
                         </article>
                     `);
-                });
-            </script>
-        </div>
-        <a href="#" class="volver">Volver arriba ↑</a>
-    </section>
+                    });
+                </script>
+            </div>
+            <a href="#" class="volver">Volver arriba ↑</a>
+        </section>
 
-    <section id="poesia" class="seccion-genero">
-        <h2 class="titulo-genero">🖋️ POESÍA</h2>
-        <div class="grid-libros">
-            <script>
-                const poesia = [
-                    "Veinte poemas de amor y una canción desesperada – Pablo Neruda", "Cien sonetos de amor – Pablo Neruda", "Hojas de hierba – Walt Whitman", "Las flores del mal – Charles Baudelaire", "Poeta en Nueva York – Federico García Lorca", "Romancero gitano – Federico García Lorca", "Rimas y leyendas – Gustavo Adolfo Bécquer", "Antología poética – Mario Benedetti", "Residencia en la tierra – Pablo Neruda", "Ariel – Sylvia Plath", "El arco y la lira – Octavio Paz", "Campos de Castilla – Antonio Machado", "Cántico – Jorge Guillén", "Libro del desasosiego – Fernando Pessoa", "Odas elementales – Pablo Neruda", "La tierra baldía – T.S. Eliot", "Sonetos – William Shakespeare", "Antología – Emily Dickinson", "Piedra de sol – Octavio Paz", "Poemas humanos – César Vallejo"
-                ];
-                poesia.forEach(libro => {
-                    document.write(`
+        <section id="poesia" class="seccion-genero">
+            <h2 class="titulo-genero">🖋️ POESÍA</h2>
+            <div class="grid-libros">
+                <script>
+                    const poesia = [
+                        "Veinte poemas de amor y una canción desesperada – Pablo Neruda", "Cien sonetos de amor – Pablo Neruda", "Hojas de hierba – Walt Whitman", "Las flores del mal – Charles Baudelaire", "Poeta en Nueva York – Federico García Lorca",
+                        "Romancero gitano – Federico García Lorca", "Rimas y leyendas – Gustavo Adolfo Bécquer", "Antología poética – Mario Benedetti", "Residencia en la tierra – Pablo Neruda", "Ariel – Sylvia Plath", "El arco y la lira – Octavio Paz",
+                        "Campos de Castilla – Antonio Machado", "Cántico – Jorge Guillén", "Libro del desasosiego – Fernando Pessoa", "Odas elementales – Pablo Neruda", "La tierra baldía – T.S. Eliot", "Sonetos – William Shakespeare", "Antología – Emily Dickinson",
+                        "Piedra de sol – Octavio Paz", "Poemas humanos – César Vallejo"
+                    ];
+                    poesia.forEach(libro => {
+                        document.write(`
                         <article class="libro-card">
                             <img src="" alt="Portada ${libro}">
                             <div class="info-libro">
@@ -305,21 +517,23 @@
                             </div>
                         </article>
                     `);
-                });
-            </script>
-        </div>
-        <a href="#" class="volver">Volver arriba ↑</a>
-    </section>
+                    });
+                </script>
+            </div>
+            <a href="#" class="volver">Volver arriba ↑</a>
+        </section>
 
-    <section id="biografias" class="seccion-genero">
-        <h2 class="titulo-genero">👤 BIOGRAFÍA</h2>
-        <div class="grid-libros">
-            <script>
-                const biografia = [
-                    "El diario de Ana Frank – Ana Frank", "Long Walk to Freedom – Nelson Mandela", "Steve Jobs – Walter Isaacson", "Yo soy Malala – Malala Yousafzai", "Einstein: His Life and Universe – Walter Isaacson", "Churchill – Andrew Roberts", "Frida – Hayden Herrera", "Memorias – Barack Obama", "Open – Andre Agassi", "Becoming – Michelle Obama", "Leonardo da Vinci – Walter Isaacson", "Vida de Gandhi – Louis Fischer", "El hombre en busca de sentido – Viktor Frankl", "Mi historia – Pelé", "Alexander Hamilton – Ron Chernow", "Marie Curie – Eve Curie", "Bob Dylan: Chronicles – Bob Dylan", "Autobiografía de Mark Twain – Mark Twain", "Vida de Picasso – John Richardson", "Van Gogh: La vida – Steven Naifeh"
-                ];
-                biografia.forEach(libro => {
-                    document.write(`
+        <section id="biografias" class="seccion-genero">
+            <h2 class="titulo-genero">👤 BIOGRAFÍA</h2>
+            <div class="grid-libros">
+                <script>
+                    const biografia = [
+                        "El diario de Ana Frank – Ana Frank", "Long Walk to Freedom – Nelson Mandela", "Steve Jobs – Walter Isaacson", "Yo soy Malala – Malala Yousafzai", "Einstein: His Life and Universe – Walter Isaacson", "Churchill – Andrew Roberts",
+                        "Frida – Hayden Herrera", "Memorias – Barack Obama", "Open – Andre Agassi", "Becoming – Michelle Obama", "Leonardo da Vinci – Walter Isaacson", "Vida de Gandhi – Louis Fischer", "El hombre en busca de sentido – Viktor Frankl",
+                        "Mi historia – Pelé", "Alexander Hamilton – Ron Chernow", "Marie Curie – Eve Curie", "Bob Dylan: Chronicles – Bob Dylan", "Autobiografía de Mark Twain – Mark Twain", "Vida de Picasso – John Richardson", "Van Gogh: La vida – Steven Naifeh"
+                    ];
+                    biografia.forEach(libro => {
+                        document.write(`
                         <article class="libro-card">
                             <img src="" alt="Portada ${libro}">
                             <div class="info-libro">
@@ -331,21 +545,24 @@
                             </div>
                         </article>
                     `);
-                });
-            </script>
-        </div>
-        <a href="#" class="volver">Volver arriba ↑</a>
-    </section>
+                    });
+                </script>
+            </div>
+            <a href="#" class="volver">Volver arriba ↑</a>
+        </section>
 
-    <section id="historia" class="seccion-genero">
-        <h2 class="titulo-genero">🏛️ HISTORIA</h2>
-        <div class="grid-libros">
-            <script>
-                const historia = [
-                    "Sapiens – Yuval Noah Harari", "Breve historia del mundo – Ernst Gombrich", "Historia del siglo XX – Eric Hobsbawm", "Guns, Germs, and Steel – Jared Diamond", "El Mediterráneo – Fernand Braudel", "Historia de Roma – Mary Beard", "La Segunda Guerra Mundial – Antony Beevor", "Historia mínima de España – Juan Pablo Fusi", "El siglo de las luces – Alejo Carpentier", "La Revolución Francesa – Georges Lefebvre", "Historia del mundo antiguo – Susan Wise Bauer", "Imperios – Peter Heather", "Historia de América Latina – Tulio Halperín Donghi", "La Primera Guerra Mundial – Hew Strachan", "Los orígenes del totalitarismo – Hannah Arendt", "Historia económica mundial – Angus Maddison", "El Holocausto – Laurence Rees", "La caída del Imperio Romano – Peter Brown", "Historia de China – John Keay", "Historia del Islam – Karen Armstrong"
-                ];
-                historia.forEach(libro => {
-                    document.write(`
+        <section id="historia" class="seccion-genero">
+            <h2 class="titulo-genero">🏛️ HISTORIA</h2>
+            <div class="grid-libros">
+                <script>
+                    const historia = [
+                        "Sapiens – Yuval Noah Harari", "Breve historia del mundo – Ernst Gombrich", "Historia del siglo XX – Eric Hobsbawm", "Guns, Germs, and Steel – Jared Diamond", "El Mediterráneo – Fernand Braudel", "Historia de Roma – Mary Beard",
+                        "La Segunda Guerra Mundial – Antony Beevor", "Historia mínima de España – Juan Pablo Fusi", "El siglo de las luces – Alejo Carpentier", "La Revolución Francesa – Georges Lefebvre", "Historia del mundo antiguo – Susan Wise Bauer",
+                        "Imperios – Peter Heather", "Historia de América Latina – Tulio Halperín Donghi", "La Primera Guerra Mundial – Hew Strachan", "Los orígenes del totalitarismo – Hannah Arendt", "Historia económica mundial – Angus Maddison",
+                        "El Holocausto – Laurence Rees", "La caída del Imperio Romano – Peter Brown", "Historia de China – John Keay", "Historia del Islam – Karen Armstrong"
+                    ];
+                    historia.forEach(libro => {
+                        document.write(`
                         <article class="libro-card">
                             <img src="" alt="Portada ${libro}">
                             <div class="info-libro">
@@ -357,21 +574,24 @@
                             </div>
                         </article>
                     `);
-                });
-            </script>
-        </div>
-        <a href="#" class="volver">Volver arriba ↑</a>
-    </section>
+                    });
+                </script>
+            </div>
+            <a href="#" class="volver">Volver arriba ↑</a>
+        </section>
 
-    <section id="infantil" class="seccion-genero">
-        <h2 class="titulo-genero">🧒 INFANTIL / JUVENIL</h2>
-        <div class="grid-libros">
-            <script>
-                const infantil = [
-                    "Harry Potter (saga) – J.K. Rowling", "El Principito – Antoine de Saint-Exupéry", "Alicia en el país de las maravillas – Lewis Carroll", "El diario de Greg – Jeff Kinney", "Charlie y la fábrica de chocolate – Roald Dahl", "Las crónicas de Narnia – C.S. Lewis", "Percy Jackson – Rick Riordan", "Los juegos del hambre – Suzanne Collins", "Matilda – Roald Dahl", "La historia interminable – Michael Ende", "El Hobbit – J.R.R. Tolkien", "Donde viven los monstruos – Maurice Sendak", "Corazón (Wonder) – R.J. Palacio", "Peter Pan – J.M. Barrie", "Momo – Michael Ende", "Pippi Calzaslargas – Astrid Lindgren", "Divergente – Veronica Roth", "El león, la bruja y el armario – C.S. Lewis", "La brújula dorada – Philip Pullman", "Anne of Green Gables – L.M. Montgomery"
-                ];
-                infantil.forEach(libro => {
-                    document.write(`
+        <section id="infantil" class="seccion-genero">
+            <h2 class="titulo-genero">🧒 INFANTIL / JUVENIL</h2>
+            <div class="grid-libros">
+                <script>
+                    const infantil = [
+                        "Harry Potter (saga) – J.K. Rowling", "El Principito – Antoine de Saint-Exupéry", "Alicia en el país de las maravillas – Lewis Carroll", "El diario de Greg – Jeff Kinney", "Charlie y la fábrica de chocolate – Roald Dahl",
+                        "Las crónicas de Narnia – C.S. Lewis", "Percy Jackson – Rick Riordan", "Los juegos del hambre – Suzanne Collins", "Matilda – Roald Dahl", "La historia interminable – Michael Ende", "El Hobbit – J.R.R. Tolkien",
+                        "Donde viven los monstruos – Maurice Sendak", "Corazón (Wonder) – R.J. Palacio", "Peter Pan – J.M. Barrie", "Momo – Michael Ende", "Pippi Calzaslargas – Astrid Lindgren", "Divergente – Veronica Roth",
+                        "El león, la bruja y el armario – C.S. Lewis", "La brújula dorada – Philip Pullman", "Anne of Green Gables – L.M. Montgomery"
+                    ];
+                    infantil.forEach(libro => {
+                        document.write(`
                         <article class="libro-card">
                             <img src="" alt="Portada ${libro}">
                             <div class="info-libro">
@@ -383,21 +603,24 @@
                             </div>
                         </article>
                     `);
-                });
-            </script>
-        </div>
-        <a href="#" class="volver">Volver arriba ↑</a>
-    </section>
+                    });
+                </script>
+            </div>
+            <a href="#" class="volver">Volver arriba ↑</a>
+        </section>
 
-    <section id="autoayuda" class="seccion-genero">
-        <h2 class="titulo-genero">🌱 AUTOAYUDA</h2>
-        <div class="grid-libros">
-            <script>
-                const autoayuda = [
-                    "Cómo ganar amigos e influir sobre las personas – Dale Carnegie", "El poder del ahora – Eckhart Tolle", "Los 7 hábitos de la gente altamente efectiva – Stephen Covey", "Padre rico, padre pobre – Robert Kiyosaki", "El monje que vendió su Ferrari – Robin Sharma", "Quién se ha llevado mi queso – Spencer Johnson", "Piense y hágase rico – Napoleon Hill", "El secreto – Rhonda Byrne", "El hombre en busca de sentido – Viktor Frankl", "Hábitos atómicos – James Clear", "Despierta tu héroe interior – Victor Hugo Manzanilla", "La magia del orden – Marie Kondo", "Tus zonas erróneas – Wayne Dyer", "La semana laboral de 4 horas – Tim Ferriss", "Mindset – Carol Dweck", "Inteligencia emocional – Daniel Goleman", "Vivir con plenitud las crisis – Jon Kabat-Zinn", "El código del dinero – Raimon Samsó", "Dejar ir – David R. Hawkins", "Ikigai – Héctor García & Francesc Miralles"
-                ];
-                autoayuda.forEach(libro => {
-                    document.write(`
+        <section id="autoayuda" class="seccion-genero">
+            <h2 class="titulo-genero">🌱 AUTOAYUDA</h2>
+            <div class="grid-libros">
+                <script>
+                    const autoayuda = [
+                        "Cómo ganar amigos e influir sobre las personas – Dale Carnegie", "El poder del ahora – Eckhart Tolle", "Los 7 hábitos de la gente altamente efectiva – Stephen Covey", "Padre rico, padre pobre – Robert Kiyosaki",
+                        "El monje que vendió su Ferrari – Robin Sharma", "Quién se ha llevado mi queso – Spencer Johnson", "Piense y hágase rico – Napoleon Hill", "El secreto – Rhonda Byrne", "El hombre en busca de sentido – Viktor Frankl",
+                        "Hábitos atómicos – James Clear", "Despierta tu héroe interior – Victor Hugo Manzanilla", "La magia del orden – Marie Kondo", "Tus zonas erróneas – Wayne Dyer", "La semana laboral de 4 horas – Tim Ferriss", "Mindset – Carol Dweck",
+                        "Inteligencia emocional – Daniel Goleman", "Vivir con plenitud las crisis – Jon Kabat-Zinn", "El código del dinero – Raimon Samsó", "Dejar ir – David R. Hawkins", "Ikigai – Héctor García & Francesc Miralles"
+                    ];
+                    autoayuda.forEach(libro => {
+                        document.write(`
                         <article class="libro-card">
                             <img src="" alt="Portada ${libro}">
                             <div class="info-libro">
@@ -409,21 +632,24 @@
                             </div>
                         </article>
                     `);
-                });
-            </script>
-        </div>
-        <a href="#" class="volver">Volver arriba ↑</a>
-    </section>
+                    });
+                </script>
+            </div>
+            <a href="#" class="volver">Volver arriba ↑</a>
+        </section>
 
-    <section id="aventura" class="seccion-genero">
-        <h2 class="titulo-genero">🗺️ AVENTURA</h2>
-        <div class="grid-libros">
-            <script>
-                const aventura = [
-                    "La isla del tesoro – Robert Louis Stevenson", "Robinson Crusoe – Daniel Defoe", "Los tres mosqueteros – Alexandre Dumas", "Viaje al centro de la Tierra – Julio Verne", "La vuelta al mundo en 80 días – Julio Verne", "Moby Dick – Herman Melville", "El conde de Montecristo – Alexandre Dumas", "Las aventuras de Tom Sawyer – Mark Twain", "Colmillo Blanco – Jack London", "La llamada de lo salvaje – Jack London", "Las minas del rey Salomón – H. Rider Haggard", "El viejo y el mar – Ernest Hemingway", "El último mohicano – James Fenimore Cooper", "Capitanes intrépidos – Rudyard Kipling", "La carretera – Cormac McCarthy", "El corazón de las tinieblas – Joseph Conrad", "La isla misteriosa – Julio Verne", "Hatchet – Gary Paulsen", "El mapa del tesoro – Andrew Cartmel", "Relato de un náufrago – Gabriel García Márquez"
-                ];
-                aventura.forEach(libro => {
-                    document.write(`
+        <section id="aventura" class="seccion-genero">
+            <h2 class="titulo-genero">🗺️ AVENTURA</h2>
+            <div class="grid-libros">
+                <script>
+                    const aventura = [
+                        "La isla del tesoro – Robert Louis Stevenson", "Robinson Crusoe – Daniel Defoe", "Los tres mosqueteros – Alexandre Dumas", "Viaje al centro de la Tierra – Julio Verne", "La vuelta al mundo en 80 días – Julio Verne",
+                        "Moby Dick – Herman Melville", "El conde de Montecristo – Alexandre Dumas", "Las aventuras de Tom Sawyer – Mark Twain", "Colmillo Blanco – Jack London", "La llamada de lo salvaje – Jack London",
+                        "Las minas del rey Salomón – H. Rider Haggard", "El viejo y el mar – Ernest Hemingway", "El último mohicano – James Fenimore Cooper", "Capitanes intrépidos – Rudyard Kipling", "La carretera – Cormac McCarthy",
+                        "El corazón de las tinieblas – Joseph Conrad", "La isla misteriosa – Julio Verne", "Hatchet – Gary Paulsen", "El mapa del tesoro – Andrew Cartmel", "Relato de un náufrago – Gabriel García Márquez"
+                    ];
+                    aventura.forEach(libro => {
+                        document.write(`
                         <article class="libro-card">
                             <img src="" alt="Portada ${libro}">
                             <div class="info-libro">
@@ -435,21 +661,22 @@
                             </div>
                         </article>
                     `);
-                });
-            </script>
-        </div>
-        <a href="#" class="volver">Volver arriba ↑</a>
-    </section>
+                    });
+                </script>
+            </div>
+            <a href="#" class="volver">Volver arriba ↑</a>
+        </section>
 
-    </main>
+        </main>
 
-    <footer>
-        <p><a href="../Index.html">Volver a Inicio</a> | <a href="Reseñas.html">Ir a Reseñas</a> </p>
-        <div class="social-icons">
-             <p>Síguenos en nuestras redes sociales</p>
-        </div>
-        <p>&copy; 2026 El Censo Literario - Proyecto Web | Todos los derechos reservados.</p>
-    </footer>
+        <footer>
+            <p><a href="../Index.html">Volver a Inicio</a> | <a href="Reseñas.html">Ir a Reseñas</a> </p>
+            <div class="social-icons">
+                <p>Síguenos en nuestras redes sociales</p>
+            </div>
+            <p>&copy; 2026 El Censo Literario - Proyecto Web | Todos los derechos reservados.</p>
+        </footer>
 
 </body>
+
 </html>

@@ -1,5 +1,13 @@
 /* Estilos para la página de Reseñas */
 
+/* Logo pequeño junto al texto */
+.logo-icon {
+    width: 100px;
+    height: 100px;
+    background-image: url('../Images/Favicon.png'); /* Usamos la misma imagen del favicon */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 .main-resenas {
     max-width: 900px;
