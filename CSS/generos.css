@@ -140,6 +140,8 @@ body {
     border-radius: 12px;
     background: #fff;
     transition: all 0.3s ease;
+    align-items: flex-start;
+    height: 100%;
 }
 
 .libro-card:hover {
