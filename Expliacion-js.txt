@@ -1,0 +1,19 @@
+JavaScript espera a que la página cargue, busca el botón (la x), se queda vigilando hasta que se le da la orden, y entoces; cuando alguien lo pulsa le pone una capa de invisibilidad al banner, lo que hace que desaparezca.
+
+
+window.onload: Espera a que toda la página cargue para que JavaScript pueda "encontrar" el botón y el banner sin errores.
+
+En principio no hace nada, cuando la pagina ya esta cargada del todo, se presenta. Es el que indica que ya está todo listo.
+
+
+document.querySelector: Busca el botón que tiene la clase .closebutton.
+
+Esta orden busca el elemento, en este caso la etiqueta nombrada cookieBanner en el HTML/css. Asi, el JS ya sabe donde están y ha adjudicado un lugar especifico al banner y al botón.
+
+onclick: Esta orden tiene una causa y una consecuencia, la orden es quedarse presente y quieto; la consecuencia se produce si alguien lo toca, que es cuando avisa para que se de la siguiente orden en el JS.
+
+
+banner.style.display = 'none': Esta es la clave. Al pulsar, le dice al CSS que el banner ya no debe aparecer en la pantalla.
+
+
+En el CSS tengo escrito que, cuando se abre la página, este mensaje aparece, cuando JS llega y recibe las indicaciones de que lasordenes anteriores se han completado; entonces reescribe de cierto modo la orden inicial, lo que produce que el banner se 'cierre' porque el html+css no lo lee como existente.
