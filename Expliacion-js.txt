@@ -1,4 +1,14 @@
-JavaScript espera a que la página cargue, busca el botón (la x), se queda vigilando hasta que se le da la orden, y entoces; cuando alguien lo pulsa le pone una capa de invisibilidad al banner, lo que hace que desaparezca.
+PRIMER USO DE JAVA.SCRIPT
+
+Me fijo en el segundo ejercicio, el de los ejemplos resueltos, que es sobre cambiar el color a algo por medio de una función de js. 
+
+Así que uso la solución que hice del ejercicio y la modifico para que en mi pagina de Contactos, al tener rellenados los campos para enviar el mensaje, cuando pulses "Enviar Mensaje", cambiará de naranja a verde.
+
+
+
+SEGUNDO USO DE JAVA.SCRIPT
+
+JavaScript espera a que la página cargue, busca el botón (la x), se queda vigilando hasta que se le da la orden, y entonces; cuando alguien lo pulsa le pone una capa de invisibilidad al banner, lo que hace que desaparezca.
 
 
 window.onload: Espera a que toda la página cargue para que JavaScript pueda "encontrar" el botón y el banner sin errores.

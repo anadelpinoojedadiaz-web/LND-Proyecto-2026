@@ -152,7 +152,7 @@
 
 @media (max-height: 600px) {
     .container {
-        margin: 10px auto; /* Reduce el margen superior para que no haya que hacer tanto scroll */
+        margin: 10px auto; /* Reduce el margen superior para que no se desperdicie espacio */
         
     }
     .quienes-somos, .formulario-seccion {
